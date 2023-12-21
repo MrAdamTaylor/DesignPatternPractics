@@ -6,6 +6,7 @@ namespace AbstractFactory
     {
         public override void Launch()
         {
+            Debug.Log("Метод абстрактной фабрики");
             CreateFactories();
         }
 

@@ -7,6 +7,7 @@ public class BuilderLauncher : DesignPatternLauncher
 {
     public override void Launch()
     {
+        Debug.Log("Работа паттерна Builder: ");
         var garage = new Garage();
 
         var miniBuilder = new MiniBuilder();

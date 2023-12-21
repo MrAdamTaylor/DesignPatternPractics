@@ -1,3 +1,5 @@
+using UnityEngine;
+
 namespace Singleton
 {
     
@@ -6,6 +8,7 @@ namespace Singleton
     {
         public override void Launch()
         {
+            Debug.Log("Паттерн синглтон: ");
             Logger.Instance.Test();
         }
     }

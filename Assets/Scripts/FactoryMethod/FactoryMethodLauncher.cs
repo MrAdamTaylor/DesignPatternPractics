@@ -10,11 +10,12 @@ namespace FactoryMethod
 
         public override void Launch()
         {
-            IntallFactories();
+            Debug.Log("Паттенр фабричный метод: ");
+            InstallFactories();
             CreateDiscounts();
         }
 
-        private void IntallFactories()
+        private void InstallFactories()
         {
             _factories = new List<DiscountFactory>
             {
