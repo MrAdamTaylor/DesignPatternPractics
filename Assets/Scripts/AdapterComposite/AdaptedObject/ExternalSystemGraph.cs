@@ -5,6 +5,11 @@ namespace AdapterComposite
 {
     public class ExternalSystemGraph : IExternalSystemGraph
     {
+        public ExternalSystemGraph()
+        {
+            
+        }
+
         private List<GraphData> _graphDatas;
 
         public ExternalSystemGraph(List<GraphData> graphDatas)

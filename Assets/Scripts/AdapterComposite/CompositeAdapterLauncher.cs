@@ -12,6 +12,7 @@ namespace AdapterComposite
             loader.LoadData();
             IgrapAdapter adapter = new GraphAdapter();
             var graphStruct = adapter.GetGraphData();
+            graphStruct.OutputGraphsConnections();
 
         }
     }

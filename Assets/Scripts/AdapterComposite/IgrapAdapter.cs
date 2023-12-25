@@ -1,3 +1,5 @@
+using AdapterComposite.OutputObject;
+
 namespace AdapterComposite
 {
     public interface IgrapAdapter

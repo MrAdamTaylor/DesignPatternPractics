@@ -49,13 +49,14 @@
      <Compile Include="Assets\Scripts\AdapterComposite\OutputObject\StructGraphData.cs" />
      <Compile Include="Assets\Scripts\EnterpriseLogic\ServiceLocator\IService.cs" />
      <Compile Include="Assets\Scripts\AbstractFactory\IShoppingCartPurchaseFactory.cs" />
-     <Compile Include="Assets\Scripts\Builder\Car.cs" />
      <Compile Include="Assets\Scripts\EnterpriseLogic\GraphEnterprice\GraphConverter.cs" />
+     <Compile Include="Assets\Scripts\Builder\Car.cs" />
      <Compile Include="Assets\Scripts\PatternsLauncher.cs" />
      <Compile Include="Assets\Scripts\Singleton\ThreadSafeLogger.cs" />
      <Compile Include="Assets\Scripts\AbstractFactory\ShoppingCartPurchaseFactory.cs" />
      <Compile Include="Assets\Scripts\FactoryMethod\Auxiliary elements\Guid.cs" />
      <Compile Include="Assets\Scripts\Singleton\SingletonLauncher.cs" />
+     <Compile Include="Assets\Scripts\Bridge\Menu.cs" />
      <Compile Include="Assets\Scripts\EnterpriseLogic\UniqueArrayExtension.cs" />
      <Compile Include="Assets\Scripts\AbstractFactory\AbstractFactoryLauncher.cs" />
      <Compile Include="Assets\Scripts\FactoryMethod\Factory Method Implements\DiscountFactory.cs" />
@@ -67,6 +68,7 @@
      <Compile Include="Assets\Scripts\Builder\BuilderLauncher.cs" />
      <Compile Include="Assets\Scripts\Adapter\NeedAdaptation\City.cs" />
      <Compile Include="Assets\Scripts\EnterpriseLogic\GraphEnterprice\GraphDataExtension.cs" />
+     <Compile Include="Assets\Scripts\AdapterComposite\IStructGraphDataIntReader.cs" />
      <Compile Include="Assets\Scripts\AdapterComposite\StaticGraphLoader.cs" />
      <Compile Include="Assets\Scripts\Builder\MiniBuilder.cs" />
      <Compile Include="Assets\Scripts\FactoryMethod\Factory Method Implements\CountryDiscountFactory.cs" />
@@ -75,6 +77,7 @@
      <Compile Include="Assets\Scripts\AdapterComposite\GraphAdapter.cs" />
      <Compile Include="Assets\Scripts\AbstractFactory\BelgiumShippingCostsService.cs" />
      <Compile Include="Assets\Scripts\Builder\BMWBuilder.cs" />
+     <Compile Include="Assets\Scripts\EnterpriseLogic\GraphEnterprice\GraphStructDataExtension.cs" />
      <Compile Include="Assets\Scripts\AdapterComposite\AdaptedObject\GraphStaticData.cs" />
      <Compile Include="Assets\Scripts\Prototype\Person.cs" />
      <Compile Include="Assets\Scripts\AbstractFactory\IDiscountService.cs" />
@@ -92,10 +95,12 @@
      <Compile Include="Assets\Scripts\Builder\CarBuilder.cs" />
      <Compile Include="Assets\Scripts\Adapter\NeedAdaptation\CityFromExternalSystem.cs" />
      <Compile Include="Assets\Scripts\AdapterComposite\AdaptedObject\IExternalSystemGraph.cs" />
+     <Compile Include="Assets\Scripts\Bridge\BridgeLauncher.cs" />
      <Compile Include="Assets\Scripts\AdapterComposite\IgrapAdapter.cs" />
      <Compile Include="Assets\Scripts\Adapter\AdapterCore\ICityAdapter.cs" />
      <Compile Include="Assets\Scripts\AdapterComposite\AdaptedObject\ExternalSystemGraph.cs" />
      <Compile Include="Assets\Scripts\EnterpriseLogic\ServiceLocator\ServiceAllocator.cs" />
+     <Compile Include="Assets\Scripts\AdapterComposite\IStructGraphDataIntWriter.cs" />
      <Compile Include="Assets\Scripts\Adapter\NeedAdaptation\ExternalSystem.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Resources" />
@@ -117,6 +122,7 @@
      <Folder Include="Assets\Scripts\Builder" />
      <Folder Include="Assets\Scripts\Adapter\NeedAdaptation" />
      <Folder Include="Assets\Scripts\FactoryMethod\Factory Method Implements" />
+     <Folder Include="Assets\Scripts\Bridge" />
      <Folder Include="Assets\Scripts" />
      <Folder Include="Assets\Scripts\EnterpriseLogic\ServiceLocator" />
      <Folder Include="Assets\Scripts\AdapterComposite\AdaptedObject" />
