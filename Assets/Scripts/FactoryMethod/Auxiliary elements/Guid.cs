@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace FactoryMethod
+namespace FactoryMethod.Auxiliary_elements
 {
     public class Guid
     {

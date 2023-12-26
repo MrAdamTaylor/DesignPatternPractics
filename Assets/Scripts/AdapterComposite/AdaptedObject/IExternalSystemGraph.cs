@@ -1,7 +1,6 @@
-using AdapterComposite.AdaptedObject;
 using EnterpriseLogic.ServiceLocator;
 
-namespace AdapterComposite
+namespace AdapterComposite.AdaptedObject
 {
     public interface IExternalSystemGraph : IService
     {

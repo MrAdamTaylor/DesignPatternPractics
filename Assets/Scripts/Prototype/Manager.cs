@@ -1,17 +1,20 @@
 using System;
 
-[Serializable]
-class Manager : Person
+namespace Prototype
 {
-    public override string Name { get; set; }
-
-    public Manager(string name)
+    [Serializable]
+    class Manager : Person
     {
-        Name = name;
-    }
+        public override string Name { get; set; }
 
-    public override Person Clone(bool deepClone = false)
-    {
-        return (Person)MemberwiseClone();
+        public Manager(string name)
+        {
+            Name = name;
+        }
+
+        public override Person Clone(bool deepClone = false)
+        {
+            return (Person)MemberwiseClone();
+        }
     }
 }

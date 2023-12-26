@@ -1,49 +1,49 @@
-using System.Collections;
-using System.Collections.Generic;
 using AdapterComposite.AdaptedObject;
-using UnityEngine;
 
-public static class GraphConverter 
+namespace EnterpriseLogic.GraphEnterprice
 {
-    public static int[] ConvertToArray(this AdjacenyListStruct[] graphData)
+    public static class GraphConverter 
     {
-        int[] allIntData;
-        int arraySize = CalculateSizeForArray(graphData);
-        allIntData = new int[arraySize];
-        allIntData = FillDataArray(graphData, arraySize);
-        return allIntData;
-    }
-    
-    private static int[] FillDataArray(AdjacenyListStruct[] graphData, int arraySize)
-    {
-        int[] tempArrayData = new int[arraySize];
-        int indexValue = 0;
-        int count = graphData.Length;
-        for (int i = 0; i < count; i++)
+        public static int[] ConvertToArray(this AdjacenyListStruct[] graphData)
         {
-            tempArrayData[indexValue] = graphData[i].graph;
-            indexValue++;
-            for (int j = 0; j < graphData[i].neighbours.Length; j++)
-            {
-                tempArrayData[indexValue] = graphData[i].neighbours[j];
-                indexValue++;
-            }
+            int[] allIntData;
+            int arraySize = CalculateSizeForArray(graphData);
+            allIntData = new int[arraySize];
+            allIntData = FillDataArray(graphData, arraySize);
+            return allIntData;
         }
-        return tempArrayData;
-    }
-
-    private static int CalculateSizeForArray(AdjacenyListStruct[] graphData)
-    {
-        int sum = 0;
-        int allDataCount = graphData.Length;
-        for (int i = 0; i < allDataCount; i++)
+    
+        private static int[] FillDataArray(AdjacenyListStruct[] graphData, int arraySize)
         {
-            sum += 1;
-            for (int j = 0; j < graphData[i].neighbours.Length; j++)
+            int[] tempArrayData = new int[arraySize];
+            int indexValue = 0;
+            int count = graphData.Length;
+            for (int i = 0; i < count; i++)
+            {
+                tempArrayData[indexValue] = graphData[i].graph;
+                indexValue++;
+                for (int j = 0; j < graphData[i].neighbours.Length; j++)
+                {
+                    tempArrayData[indexValue] = graphData[i].neighbours[j];
+                    indexValue++;
+                }
+            }
+            return tempArrayData;
+        }
+
+        private static int CalculateSizeForArray(AdjacenyListStruct[] graphData)
+        {
+            int sum = 0;
+            int allDataCount = graphData.Length;
+            for (int i = 0; i < allDataCount; i++)
             {
                 sum += 1;
+                for (int j = 0; j < graphData[i].neighbours.Length; j++)
+                {
+                    sum += 1;
+                }
             }
+            return sum;
         }
-        return sum;
     }
 }

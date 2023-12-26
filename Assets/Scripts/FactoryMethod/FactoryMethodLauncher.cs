@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using FactoryMethod.Auxiliary_elements;
+using FactoryMethod.Factory_Method_Implements;
 using UnityEngine;
 
 namespace FactoryMethod

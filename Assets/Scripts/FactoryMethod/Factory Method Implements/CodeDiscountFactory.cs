@@ -1,4 +1,7 @@
-namespace FactoryMethod
+using FactoryMethod.Auxiliary_elements;
+using FactoryMethod.Factory_Method_Service;
+
+namespace FactoryMethod.Factory_Method_Implements
 {
     public class CodeDiscountFactory : DiscountFactory
     {

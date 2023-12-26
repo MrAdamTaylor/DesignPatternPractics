@@ -1,3 +1,5 @@
+using EnterpriseLogic;
+using EnterpriseLogic.GraphEnterprice;
 using UnityEngine;
 
 namespace AdapterComposite.AdaptedObject

@@ -1,28 +1,29 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Car
+namespace Builder
 {
-    private readonly List<string> _parts = new();
-    private readonly string _carType;
-
-    public Car(string carType)
+    public class Car
     {
-        _carType = carType;
-    }
+        private readonly List<string> _parts = new();
+        private readonly string _carType;
 
-    public void AddPart(string part)
-    {
-        _parts.Add(part);
-    }
-
-    public void Output()
-    {
-        foreach (string part in _parts)
+        public Car(string carType)
         {
-            Debug.Log($"Car of type {_carType} has part {part}.");
+            _carType = carType;
+        }
+
+        public void AddPart(string part)
+        {
+            _parts.Add(part);
+        }
+
+        public void Output()
+        {
+            foreach (string part in _parts)
+            {
+                Debug.Log($"Car of type {_carType} has part {part}.");
+            }
         }
     }
 }

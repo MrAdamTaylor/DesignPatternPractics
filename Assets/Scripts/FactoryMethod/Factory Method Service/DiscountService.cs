@@ -1,4 +1,4 @@
-namespace FactoryMethod
+namespace FactoryMethod.Factory_Method_Service
 {
     public abstract class DiscountService
     {

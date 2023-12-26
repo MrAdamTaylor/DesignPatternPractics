@@ -2,47 +2,50 @@ using System;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
-/// <summary>
-/// Прототип
-/// </summary>
-[Serializable]
-public abstract class Person
+namespace Prototype
 {
-    public abstract string Name { get; set; }
-
-    public abstract Person Clone(bool deepClone);
-}
-
-[Serializable]
-class Employe : Person
-{
-    public Manager Manager { get; set; }
-    public override string Name { get; set; }
-
-    public Employe(string name, Manager manager)
+    /// <summary>
+    /// Прототип
+    /// </summary>
+    [Serializable]
+    public abstract class Person
     {
-        Name = name;
-        Manager = manager;
+        public abstract string Name { get; set; }
+
+        public abstract Person Clone(bool deepClone);
     }
 
-    public override Person Clone(bool deepClone = false)
+    [Serializable]
+    class Employe : Person
     {
-        if (deepClone)
+        public Manager Manager { get; set; }
+        public override string Name { get; set; }
+
+        public Employe(string name, Manager manager)
         {
-            var formatter = new BinaryFormatter();
-            using (var strem = new MemoryStream())
+            Name = name;
+            Manager = manager;
+        }
+
+        public override Person Clone(bool deepClone = false)
+        {
+            if (deepClone)
             {
-                #region NotSecurityCode
+                var formatter = new BinaryFormatter();
+                using (var strem = new MemoryStream())
+                {
+                    #region NotSecurityCode
 
                     formatter.Serialize(strem, this);
                     strem.Seek(0, SeekOrigin.Begin);
                     return (Person)formatter.Deserialize(strem);
                     //TODO - метод Deserialize может быть использован злоумышленником, 
                     //TODO - к примеру выполнить атаку "Отказ в обслуживании"
-                #endregion
+                    #endregion
                 
+                }
             }
+            return (Person)MemberwiseClone();
         }
-        return (Person)MemberwiseClone();
     }
 }

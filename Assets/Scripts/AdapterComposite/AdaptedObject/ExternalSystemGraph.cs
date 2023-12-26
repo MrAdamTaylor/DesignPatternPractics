@@ -1,7 +1,6 @@
 using System.Collections.Generic;
-using AdapterComposite.AdaptedObject;
 
-namespace AdapterComposite
+namespace AdapterComposite.AdaptedObject
 {
     public class ExternalSystemGraph : IExternalSystemGraph
     {
