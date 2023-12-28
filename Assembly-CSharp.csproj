@@ -56,6 +56,7 @@
      <Compile Include="Assets\Scripts\Facade\DiscountFacade.cs" />
      <Compile Include="Assets\Scripts\AbstractFactory\ShoppingCartPurchaseFactory.cs" />
      <Compile Include="Assets\Scripts\FactoryMethod\Auxiliary elements\Guid.cs" />
+     <Compile Include="Assets\Scripts\Flyweight\CharacterB.cs" />
      <Compile Include="Assets\Scripts\Singleton\SingletonLauncher.cs" />
      <Compile Include="Assets\Scripts\Facade\CustomerDiscountBaseService.cs" />
      <Compile Include="Assets\Scripts\Decorator\StatisticsDecorator.cs" />
@@ -79,11 +80,13 @@
      <Compile Include="Assets\Scripts\Composite\File.cs" />
      <Compile Include="Assets\Scripts\AdapterComposite\IStructGraphDataIntReader.cs" />
      <Compile Include="Assets\Scripts\AdapterComposite\StaticGraphLoader.cs" />
+     <Compile Include="Assets\Scripts\Flyweight\ICharacter.cs" />
      <Compile Include="Assets\Scripts\Builder\MiniBuilder.cs" />
      <Compile Include="Assets\Scripts\FactoryMethod\Factory Method Implements\CountryDiscountFactory.cs" />
      <Compile Include="Assets\Scripts\Decorator\IMailService.cs" />
      <Compile Include="Assets\Scripts\AbstractFactory\BelgiumShoppingCartPurchaseFactory.cs" />
      <Compile Include="Assets\Scripts\AdapterComposite\AdaptedObject\GraphData.cs" />
+     <Compile Include="Assets\Scripts\Flyweight\Paragraph.cs" />
      <Compile Include="Assets\Scripts\AdapterComposite\GraphAdapter.cs" />
      <Compile Include="Assets\Scripts\Proxy\Document.cs" />
      <Compile Include="Assets\Scripts\AbstractFactory\BelgiumShippingCostsService.cs" />
@@ -93,6 +96,7 @@
      <Compile Include="Assets\Scripts\AdapterComposite\AdaptedObject\GraphStaticData.cs" />
      <Compile Include="Assets\Scripts\Facade\DayOfTheWeekFactorService.cs" />
      <Compile Include="Assets\Scripts\Composite\CompositeLauncher.cs" />
+     <Compile Include="Assets\Scripts\Flyweight\FlyweightLauncher.cs" />
      <Compile Include="Assets\Scripts\Prototype\Person.cs" />
      <Compile Include="Assets\Scripts\AbstractFactory\IDiscountService.cs" />
      <Compile Include="Assets\Scripts\Decorator\MessageDataBaseDecorator.cs" />
@@ -112,6 +116,7 @@
      <Compile Include="Assets\Scripts\AbstractFactory\FranceShippingCostsService.cs" />
      <Compile Include="Assets\Scripts\Facade\OrderService.cs" />
      <Compile Include="Assets\Scripts\Builder\CarBuilder.cs" />
+     <Compile Include="Assets\Scripts\Flyweight\CharacterFactory.cs" />
      <Compile Include="Assets\Scripts\Adapter\NeedAdaptation\CityFromExternalSystem.cs" />
      <Compile Include="Assets\Scripts\AdapterComposite\AdaptedObject\IExternalSystemGraph.cs" />
      <Compile Include="Assets\Scripts\Composite\FileSystemItem.cs" />
@@ -124,6 +129,7 @@
      <Compile Include="Assets\Scripts\EnterpriseLogic\ServiceLocator\ServiceAllocator.cs" />
      <Compile Include="Assets\Scripts\AdapterComposite\IStructGraphDataIntWriter.cs" />
      <Compile Include="Assets\Scripts\Adapter\NeedAdaptation\ExternalSystem.cs" />
+     <Compile Include="Assets\Scripts\Flyweight\CharacterA.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Scripts\Decorator" />
      <Folder Include="Assets\Resources" />
@@ -137,6 +143,7 @@
      <Folder Include="Assets\Scripts\Adapter\AdapterCore" />
      <Folder Include="Assets\Scripts\EnterpriseLogic\GraphEnterprice" />
      <Folder Include="Assets\Scripts\Facade" />
+     <Folder Include="Assets\Scripts\Flyweight" />
      <Folder Include="Assets\Resources\StaticData\Graphs" />
      <Folder Include="Assets\Scripts\Prototype" />
      <Folder Include="Assets\Resources\StaticData" />
