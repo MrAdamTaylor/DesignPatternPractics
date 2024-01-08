@@ -1,4 +1,4 @@
-using AdapterComposite.OutputObject;
+using Patterns.AdapterComposite.OutputObject;
 using UnityEngine;
 
 namespace EnterpriseLogic.GraphEnterprice

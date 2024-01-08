@@ -1,4 +1,4 @@
-using AdapterComposite.AdaptedObject;
+using Patterns.AdapterComposite.AdaptedObject;
 
 namespace EnterpriseLogic.GraphEnterprice
 {
