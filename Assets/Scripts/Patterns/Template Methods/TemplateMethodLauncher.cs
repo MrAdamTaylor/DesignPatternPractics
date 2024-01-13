@@ -18,6 +18,7 @@ namespace Patterns.Template_Methods
 
             EudoraMailParser eudoraMailParser = new();
             Debug.Log(eudoraMailParser.ParseMailBody("Z8Lm"));
+            Debug.Log("");
         }
     }
 }

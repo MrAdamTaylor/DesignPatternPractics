@@ -21,6 +21,7 @@ namespace Patterns.Observer
             orderService.RemoveObserver(ticketResellerService);
         
             orderService.CompleteTicketSale(2, 4);
+            Debug.Log("");
         }
     }
 }

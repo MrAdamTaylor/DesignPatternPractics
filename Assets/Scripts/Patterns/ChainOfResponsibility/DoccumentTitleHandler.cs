@@ -1,5 +1,6 @@
 using System;
 using JetBrains.Annotations;
+using UnityEngine;
 
 namespace Patterns.ChainOfResponsibility
 {
@@ -11,7 +12,7 @@ namespace Patterns.ChainOfResponsibility
         {
             if (document.Title == string.Empty)
             {
-                throw new Exception("Название должно быть заполненно: ");
+                Debug.LogWarning("Название должно быть заполненно: ");
             }
             _successor?.Handle(document);
         }

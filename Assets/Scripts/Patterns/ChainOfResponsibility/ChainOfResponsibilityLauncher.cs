@@ -32,6 +32,7 @@ namespace Patterns.ChainOfResponsibility
                 Console.WriteLine(e);
                 throw;
             }
+            Debug.Log("");
         }
     }
 }

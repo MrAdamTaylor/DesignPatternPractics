@@ -22,6 +22,7 @@ namespace Patterns.Bridge
 
             vegetarianMenu = new VegetarianMenu(oneErouCoupon);
             Debug.Log($"Вегетерянское меню с одним купоном: {vegetarianMenu.CalculatePrice()}");
+            Debug.Log("");
         }
     }
 }

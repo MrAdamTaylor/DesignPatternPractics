@@ -14,7 +14,7 @@ namespace Patterns.Strategy
 
             order.ExportService = new JsonExportService();
             order.Exort();
-        
+            Debug.Log("");
         }
     }
 }

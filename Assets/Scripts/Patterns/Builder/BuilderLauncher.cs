@@ -17,6 +17,7 @@ namespace Patterns.Builder
         
             garage.Construct(bmwBuilder);
             bmwBuilder.Car.Output();
+            Debug.Log("");
         }
     }
 }

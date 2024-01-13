@@ -1,5 +1,6 @@
 using System;
 using JetBrains.Annotations;
+using UnityEngine;
 
 namespace Patterns.ChainOfResponsibility
 {
@@ -17,7 +18,7 @@ namespace Patterns.ChainOfResponsibility
         {
             if (!document.ApprovedByLitigation)
             {
-                throw new Exception("Документ должен быть утверждён в судебном порядке");
+                Debug.LogWarning("Документ должен быть утверждён в судебном порядке");
             }
             _successor?.Handle(document);
         }

@@ -25,6 +25,7 @@ namespace Patterns.Command
         
             commandManager.UndoAll();
             repository.WriteDataStore();
+            Debug.Log("");
         }
     }
 }

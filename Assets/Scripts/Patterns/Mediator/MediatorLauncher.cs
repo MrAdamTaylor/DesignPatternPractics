@@ -23,6 +23,7 @@ namespace Patterns.Mediator
             
             ann.Send("Hi everyone, can someone have a look at file");
             sven.Send("On it!");
+            Debug.Log("");
         }
     }
 }

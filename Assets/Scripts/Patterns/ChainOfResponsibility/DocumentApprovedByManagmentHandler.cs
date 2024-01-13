@@ -1,5 +1,6 @@
 using System;
 using JetBrains.Annotations;
+using UnityEngine;
 
 namespace Patterns.ChainOfResponsibility
 {
@@ -17,7 +18,7 @@ namespace Patterns.ChainOfResponsibility
         {
             if (!document.ApprovedByManagement)
             {
-                throw new Exception("Документ должен быть одобрен руководством");
+                Debug.LogWarning("Документ должен быть одобрен руководством");
             }
             _successor?.Handle(document);
         }

@@ -15,6 +15,7 @@ namespace Patterns.FactoryMethod
             Debug.Log("Паттенр фабричный метод: ");
             InstallFactories();
             CreateDiscounts();
+            Debug.Log("");
         }
 
         private void InstallFactories()

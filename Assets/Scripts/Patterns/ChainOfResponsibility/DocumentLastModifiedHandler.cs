@@ -1,5 +1,6 @@
 using System;
 using JetBrains.Annotations;
+using UnityEngine;
 
 namespace Patterns.ChainOfResponsibility
 {
@@ -17,7 +18,7 @@ namespace Patterns.ChainOfResponsibility
         {
             if (document.LastModified < DateTime.UtcNow.AddDays(-30))
             {
-                throw new Exception("Документ должен быть изменён в течении последних 30-ти дней");
+                Debug.LogWarning("Документ должен быть изменён в течении последних 30-ти дней");
             }
             _successor?.Handle(document);
         }

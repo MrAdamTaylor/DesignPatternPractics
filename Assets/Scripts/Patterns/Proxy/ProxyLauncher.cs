@@ -51,6 +51,7 @@ namespace Patterns.Proxy
                 Debug.Log("Защищённый документ прокси сделан");
                 myProtectedDocumentProxy.DisplayDocument();
             #endregion
+            Debug.Log("");
         }
 
         private string GetUserType(UserType userType)

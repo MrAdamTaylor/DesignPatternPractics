@@ -25,6 +25,7 @@ namespace Patterns.Composite
             Debug.Log($"Size of topLevelDirectory1: {topLevelDirectory1.GetSize()}");
             Debug.Log($"Size of topLevelDirectory2: {topLevelDirectory2.GetSize()}");
             Debug.Log($"Size of root: {root.GetSize()}");
+            Debug.Log("");
         }
     }
 }

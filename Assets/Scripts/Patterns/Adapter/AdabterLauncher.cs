@@ -12,6 +12,7 @@ namespace Patterns.Adapter
             var city = adapter.GetCity();
             
             Debug.Log($"{city.FullName}, {city.Inhabitants}");
+            Debug.Log("");
         }
     }
 }

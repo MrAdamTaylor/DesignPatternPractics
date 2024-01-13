@@ -25,7 +25,7 @@ namespace Patterns.Prototype
             managerClone.Name = "Karen";
             Debug.Log($"Employe was cloned:  " +
                       $"{ employeClone2.Name} with manager {employeClone2.Manager.Name}");
-        
+            Debug.Log("");
         }
     }
 }

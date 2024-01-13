@@ -10,6 +10,7 @@ namespace Patterns.Singleton
         {
             Debug.Log("Паттерн синглтон: ");
             Logger.Instance.Test();
+            Debug.Log("");
         }
     }
 }

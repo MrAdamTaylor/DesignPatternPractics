@@ -26,6 +26,7 @@ namespace Patterns.Decorator
             {
                 Debug.Log($"Отправленные сообщения: {message}");
             }
+            Debug.Log("");
         }
     }
 }

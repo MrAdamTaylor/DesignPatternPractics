@@ -8,6 +8,7 @@ namespace Patterns.AbstractFactory
         {
             Debug.Log("Метод абстрактной фабрики");
             CreateFactories();
+            Debug.Log("");
         }
 
         private void CreateFactories()

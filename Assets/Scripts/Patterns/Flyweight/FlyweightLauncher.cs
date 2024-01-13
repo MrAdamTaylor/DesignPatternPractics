@@ -26,6 +26,7 @@ namespace Patterns.Flyweight
 
             var paragraph = characterFactory.CreateParagraph(new List<ICharacter>() { characterObject }, 1);
             paragraph.Draw("Lucinda", 12);
+            Debug.Log("");
         }
     }
 }
