@@ -446,6 +446,12 @@
 "Assets/Scripts/Patterns/Flyweight/FlyweightLauncher.cs"
 "Assets/Scripts/Patterns/Flyweight/ICharacter.cs"
 "Assets/Scripts/Patterns/Flyweight/Paragraph.cs"
+"Assets/Scripts/Patterns/Interpreter/InterpreterLauncher.cs"
+"Assets/Scripts/Patterns/Interpreter/RomanCenterionExpression.cs"
+"Assets/Scripts/Patterns/Interpreter/RomanContext.cs"
+"Assets/Scripts/Patterns/Interpreter/RomanExpression.cs"
+"Assets/Scripts/Patterns/Interpreter/RomanOneExpression.cs"
+"Assets/Scripts/Patterns/Interpreter/RomanTenExpression.cs"
 "Assets/Scripts/Patterns/Iterator/IPeopleCollection.cs"
 "Assets/Scripts/Patterns/Iterator/IPeopleIterator.cs"
 "Assets/Scripts/Patterns/Iterator/IteratorLauncher.cs"
@@ -501,6 +507,13 @@
 "Assets/Scripts/Patterns/Template Methods/ExchangeMailParser.cs"
 "Assets/Scripts/Patterns/Template Methods/MailParser.cs"
 "Assets/Scripts/Patterns/Template Methods/TemplateMethodLauncher.cs"
+"Assets/Scripts/Patterns/Visitor/Conteiner.cs"
+"Assets/Scripts/Patterns/Visitor/Customer.cs"
+"Assets/Scripts/Patterns/Visitor/DiscountVisitor.cs"
+"Assets/Scripts/Patterns/Visitor/Employee.cs"
+"Assets/Scripts/Patterns/Visitor/IElement.cs"
+"Assets/Scripts/Patterns/Visitor/IVisitor.cs"
+"Assets/Scripts/Patterns/Visitor/VisitorLauncher.cs"
 -langversion:9.0
 
 /deterministic

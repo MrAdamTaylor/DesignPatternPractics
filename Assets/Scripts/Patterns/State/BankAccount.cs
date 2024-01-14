@@ -1,24 +1,27 @@
-public class BankAccount
+namespace Patterns.State
 {
-    public BankAccountState BankAccountState { get; set; }
-
-    public float Balance
+    public class BankAccount
     {
-        get { return BankAccountState.Balance; }
-    }
+        public BankAccountState BankAccountState { get; set; }
 
-    public BankAccount()
-    {
-        BankAccountState = new RegularState(200, this);
-    }
+        public float Balance
+        {
+            get { return BankAccountState.Balance; }
+        }
 
-    public void Deposite(float amount)
-    {
-        BankAccountState.Deposit(amount);
-    }
+        public BankAccount()
+        {
+            BankAccountState = new RegularState(200, this);
+        }
 
-    public void Withdraw(float amount)
-    {
-        BankAccountState.Withdraw(amount);
+        public void Deposite(float amount)
+        {
+            BankAccountState.Deposit(amount);
+        }
+
+        public void Withdraw(float amount)
+        {
+            BankAccountState.Withdraw(amount);
+        }
     }
 }

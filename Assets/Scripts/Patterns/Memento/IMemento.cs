@@ -1,10 +1,13 @@
 using System;
 
-public interface IMemento
+namespace Patterns.Memento
 {
-    string GetName();
+    public interface IMemento
+    {
+        string GetName();
 
-    string GetState();
+        string GetState();
 
-    DateTime GetDate();
+        DateTime GetDate();
+    }
 }

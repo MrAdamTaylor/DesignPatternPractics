@@ -1,4 +1,7 @@
-public interface IPeopleCollection
+namespace Patterns.Iterator
 {
-    IPeopleIterator CreateIterator();
+    public interface IPeopleCollection
+    {
+        IPeopleIterator CreateIterator();
+    }
 }

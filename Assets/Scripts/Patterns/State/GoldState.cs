@@ -1,32 +1,35 @@
 using UnityEngine;
 
-public class GoldState : BankAccountState
+namespace Patterns.State
 {
-    public GoldState(float balance, BankAccount bankAccount)
+    public class GoldState : BankAccountState
     {
-        Balance = balance;
-        BankAccount = bankAccount;
-    }
-
-    public override void Deposit(float amount)
-    {
-        Debug.Log($"In {GetType()}, depositing {amount} " +
-                  $"+ 10% bonus: {amount/10}");
-        Balance += amount + (amount / 10);
-    }
-
-    public override void Withdraw(float amount)
-    {
-        Debug.Log($"In {GetType()}, withdrawing {amount} from {Balance}");
-
-        Balance -= amount;
-        if (Balance < 1000 && Balance >= 0)
+        public GoldState(float balance, BankAccount bankAccount)
         {
-            BankAccount.BankAccountState = new RegularState(Balance, BankAccount);
+            Balance = balance;
+            BankAccount = bankAccount;
         }
-        else if(Balance < 0)
+
+        public override void Deposit(float amount)
         {
-            BankAccount.BankAccountState = new OverdrawnState(Balance, BankAccount);
+            Debug.Log($"In {GetType()}, depositing {amount} " +
+                      $"+ 10% bonus: {amount/10}");
+            Balance += amount + (amount / 10);
+        }
+
+        public override void Withdraw(float amount)
+        {
+            Debug.Log($"In {GetType()}, withdrawing {amount} from {Balance}");
+
+            Balance -= amount;
+            if (Balance < 1000 && Balance >= 0)
+            {
+                BankAccount.BankAccountState = new RegularState(Balance, BankAccount);
+            }
+            else if(Balance < 0)
+            {
+                BankAccount.BankAccountState = new OverdrawnState(Balance, BankAccount);
+            }
         }
     }
 }

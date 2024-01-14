@@ -2,52 +2,55 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-class Caretaker
+namespace Patterns.Memento
 {
-    private List<IMemento> _mementos = new List<IMemento>();
-
-    private Originator _originator = null;
-
-    public Caretaker(Originator originator)
+    class Caretaker
     {
-        this._originator = originator;
-    }
+        private List<IMemento> _mementos = new List<IMemento>();
 
-    public void Backup()
-    {
-        Console.WriteLine("\nCaretaker: Saving Originator's state...");
-        this._mementos.Add(this._originator.Save());
-    }
+        private Originator _originator = null;
 
-    public void Undo()
-    {
-        if (this._mementos.Count == 0)
+        public Caretaker(Originator originator)
         {
-            return;
+            this._originator = originator;
         }
 
-        var memento = this._mementos.Last();
-        this._mementos.Remove(memento);
-
-        Console.WriteLine("Caretaker: Restoring state to: " + memento.GetName());
-
-        try
+        public void Backup()
         {
-            this._originator.Restore(memento);
+            Console.WriteLine("\nCaretaker: Saving Originator's state...");
+            this._mementos.Add(this._originator.Save());
         }
-        catch (Exception)
+
+        public void Undo()
         {
-            this.Undo();
+            if (this._mementos.Count == 0)
+            {
+                return;
+            }
+
+            var memento = this._mementos.Last();
+            this._mementos.Remove(memento);
+
+            Console.WriteLine("Caretaker: Restoring state to: " + memento.GetName());
+
+            try
+            {
+                this._originator.Restore(memento);
+            }
+            catch (Exception)
+            {
+                this.Undo();
+            }
         }
-    }
 
-    public void ShowHistory()
-    {
-        Console.WriteLine("Caretaker: Here's the list of mementos:");
-
-        foreach (var memento in this._mementos)
+        public void ShowHistory()
         {
-            Console.WriteLine(memento.GetName());
+            Console.WriteLine("Caretaker: Here's the list of mementos:");
+
+            foreach (var memento in this._mementos)
+            {
+                Console.WriteLine(memento.GetName());
+            }
         }
     }
 }

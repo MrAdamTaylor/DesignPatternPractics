@@ -1,10 +1,13 @@
-public interface IPeopleIterator
+namespace Patterns.Iterator
 {
-    Person First();
+    public interface IPeopleIterator
+    {
+        Person First();
 
-    Person Next();
+        Person Next();
 
-    bool IsDone { get;  }
+        bool IsDone { get;  }
 
-    Person CurrentItem { get; }
+        Person CurrentItem { get; }
+    }
 }

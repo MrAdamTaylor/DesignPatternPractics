@@ -1,12 +1,15 @@
-public class Person
+namespace Patterns.Iterator
 {
-    public string Name { get; set; }
-
-    public string Country { get; set; }
-
-    public Person(string name, string country)
+    public class Person
     {
-        Name = name;
-        Country = country;
+        public string Name { get; set; }
+
+        public string Country { get; set; }
+
+        public Person(string name, string country)
+        {
+            Name = name;
+            Country = country;
+        }
     }
 }

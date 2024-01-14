@@ -1,9 +1,12 @@
 using System.Collections.Generic;
 
-public class PeopleCollection : List<Person>, IPeopleCollection
+namespace Patterns.Iterator
 {
-    public IPeopleIterator CreateIterator()
+    public class PeopleCollection : List<Person>, IPeopleCollection
     {
-        return new PeopleIterator(this);
+        public IPeopleIterator CreateIterator()
+        {
+            return new PeopleIterator(this);
+        }
     }
 }

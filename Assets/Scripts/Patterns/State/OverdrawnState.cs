@@ -1,25 +1,28 @@
 using UnityEngine;
 
-public class OverdrawnState : BankAccountState
+namespace Patterns.State
 {
-    public OverdrawnState(float balance, BankAccount bankAccount)
+    public class OverdrawnState : BankAccountState
     {
-        Balance = balance;
-        BankAccount = bankAccount;
-    }
-
-    public override void Deposit(float amount)
-    {
-        Debug.Log($"In {GetType()}, depositing {amount}");
-        Balance += amount;
-        if (Balance >= 0)
+        public OverdrawnState(float balance, BankAccount bankAccount)
         {
-            BankAccount.BankAccountState = new RegularState(Balance, BankAccount);
+            Balance = balance;
+            BankAccount = bankAccount;
         }
-    }
 
-    public override void Withdraw(float amount)
-    {
-        Debug.Log($"In {GetType()}, cannot withdrawing balance {Balance}");
+        public override void Deposit(float amount)
+        {
+            Debug.Log($"In {GetType()}, depositing {amount}");
+            Balance += amount;
+            if (Balance >= 0)
+            {
+                BankAccount.BankAccountState = new RegularState(Balance, BankAccount);
+            }
+        }
+
+        public override void Withdraw(float amount)
+        {
+            Debug.Log($"In {GetType()}, cannot withdrawing balance {Balance}");
+        }
     }
 }
