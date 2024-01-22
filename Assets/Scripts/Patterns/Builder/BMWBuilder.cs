@@ -14,6 +14,7 @@ namespace Patterns.Builder
         public override void BuildFrame()
         {
             Car.AddPart("5-door with metallic finish");
+            Car.AddPart("Audio System");
         }
     }
 }

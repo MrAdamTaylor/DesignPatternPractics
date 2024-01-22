@@ -176,6 +176,7 @@
      <Compile Include="Assets\Scripts\Patterns\DesignPatternLauncher.cs" />
      <Compile Include="Assets\Scripts\Patterns\Prototype\Person.cs" />
      <Compile Include="Assets\Scripts\Patterns\AdapterComposite\AdaptedObject\IExternalSystemGraph.cs" />
+     <Compile Include="Assets\Scripts\Patterns\Adapter\AdapterCore\CityAdapter.cs" />
      <Compile Include="Assets\Scripts\Patterns\Memento\MementoLauncher.cs" />
      <Compile Include="Assets\Scripts\Patterns\Composite\FileSystemItem.cs" />
      <Compile Include="Assets\Scripts\Patterns\AdapterComposite\AdaptedObject\ExternalSystemGraph.cs" />
@@ -197,6 +198,7 @@
      <Compile Include="Assets\Scripts\EnterpriseLogic\ServiceLocator\ServiceAllocator.cs" />
      <Compile Include="Assets\Scripts\Patterns\Facade\CustomerDiscountBaseService.cs" />
      <Compile Include="Assets\Scripts\Patterns\Command\CommandManager.cs" />
+     <Compile Include="Assets\Scripts\Patterns\Prototype\Employe.cs" />
      <Compile Include="Assets\Scripts\Patterns\Interpreter\RomanContext.cs" />
      <Compile Include="Assets\Scripts\Patterns\Iterator\Person.cs" />
      <Compile Include="Assets\Scripts\Patterns\Decorator\DecoratorLauncher.cs" />
